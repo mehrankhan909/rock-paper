@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+ /* Container for the loading spinner and text */
+ .loading-container {
+    text-align: center;
+}
+
+/* The rotating spinner */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite;
+    margin: 0 auto;
+}
+
+/* Keyframes for rotating the spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styling for the loading text */
+.loading-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 15px;
+    animation: fade 2s ease-in-out infinite;
+}
+
+/* Fade in and out effect for the loading text */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.welcome{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.welcome:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Video Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./downloading.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Instagram Video Downloader</h1>
+    <input type="text" id="videoUrl" placeholder="Paste Instagram Video URL here">
+    <button id="downloadBtn">Download Video <i class="fas fa-download download-icon"></i></button>
+    <div id="result"></div>
+    <div id="loading" class="loading-container" style="display: none;">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
